@@ -1,0 +1,43 @@
+
+
+.food-display {
+  margin: 30px auto 0;
+  padding: 0 16px;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.food-display h2 {
+  margin: 0;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+
+@media (max-width: 480px) {
+  .food-display {
+    padding: 0 12px;
+  }
+
+  .food-display-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* optional medium breakpoint for better layout on tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .food-display-list {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+}
+

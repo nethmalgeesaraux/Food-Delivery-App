@@ -12,12 +12,7 @@ const Footer = () => {
             Whether you're craving comfort food, exploring new flavors, or
             simply too busy to cook, we've got you covered. Our curated
             selection of restaurants, fast delivery, and real-time tracking
-            ensure your food arrives fresh and on time. With a commitment to
-            quality, hygiene, and customer satisfaction, we’re redefining
-            convenience one bite at a time. Join thousands who trust FoodExpress
-            to deliver happiness to their doorstep. Because great food isn’t
-            just about taste—it’s about experience, connection, and care. Order
-            now and savor the difference.
+            ensure your food arrives fresh and on time. 
           </p>
           <div className="footer-socials-icons">
             <img src={assets.facebook_icon}alt="" />

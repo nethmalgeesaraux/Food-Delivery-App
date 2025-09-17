@@ -15,9 +15,9 @@ const Footer = () => {
             ensure your food arrives fresh and on time. 
           </p>
           <div className="footer-socials-icons">
-            <img src={assets.facebook_icon}alt="" />
-            <img src={assets.twitter_icon}alt="" />
-            <img src={assets.linkedin_icon}alt="" />
+            <img src={assets.facebook_icon}alt="https://www.facebook.com/nethmal.geesara.3/" />
+            <img src={assets.twitter_icon}alt="https://x.com/GeesaraNe84357" />
+            <img src={assets.linkedin_icon}alt="linkedin.com/in/nethmal-geesara-473962351" />
           </div>
         </div>
 

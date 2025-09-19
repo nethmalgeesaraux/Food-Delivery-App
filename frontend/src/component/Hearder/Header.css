@@ -37,3 +37,23 @@
     border-radius: 50px;
 }
 
+@media (max-Width:1050Px) {
+  
+    .hearder-contents{
+        max-width: 45%;
+    }
+
+    
+}
+@media (max-width:750px) {
+    .hearder-contents{
+        max-width: 55%;
+    }
+    .hearder-contents p{
+        display: none;
+
+    }
+    .hearder-contents button{
+        padding: 2vw 4vw;
+    }
+}

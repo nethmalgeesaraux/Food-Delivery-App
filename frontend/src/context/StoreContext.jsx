@@ -1,4 +1,4 @@
-// ...existing code...
+
 import React, { createContext, useState, useEffect, useMemo } from "react";
 import { food_list } from "../assets/assets";
 

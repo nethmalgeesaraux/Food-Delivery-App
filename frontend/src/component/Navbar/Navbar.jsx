@@ -1,54 +1,63 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 
 const Navbar = () => {
-
-const[menu,setMenu]= useState("Home");
-
-
-
+  const [menu, setMenu] = useState("Home");
 
   return (
-    <div className="navbar">
-      <img src={assets.logo} alt="" className="logo" />
+    <nav className="navbar">
+      <img src={assets.logo} alt="logo" className="logo" />
       <ul className="navbar-menu">
-        <li
-          className={menu === "Home" ? "acive" : ""}
-          onClick={() => setMenu("Home")}
-        >
-          Home
+        <li>
+          <Link
+            to="/"
+            className={menu === "Home" ? "active" : ""}
+            onClick={() => setMenu("Home")}
+          >
+            Home
+          </Link>
         </li>
-        <li
-          className={menu === "Menu" ? "acive" : ""}
-          onClick={() => setMenu("Menu")}
-        >
-          Menu
+        <li>
+          <a
+            href="#explore-menu"
+            className={menu === "Menu" ? "active" : ""}
+            onClick={() => setMenu("Menu")}
+          >
+            Menu
+          </a>
         </li>
-        <li
-          className={menu === "Mobile-App" ? "acive" : ""}
-          onClick={() => setMenu("Mobile-App")}
-        >
-          Mobile-App
+        <li>
+          <a
+            href="#app-download"
+            className={menu === "Mobile-App" ? "active" : ""}
+            onClick={() => setMenu("Mobile-App")}
+          >
+            Mobile-App
+          </a>
         </li>
-        <li
-          className={menu === "Contact-Us" ? "acive" : ""}
-          onClick={() => setMenu("Contact-Us")}
-        >
-          Contact Us
+        <li>
+          <a
+            href="#footer"
+            className={menu === "Contact-Us" ? "active" : ""}
+            onClick={() => setMenu("Contact-Us")}
+          >
+            Contact Us
+          </a>
         </li>
       </ul>
 
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
+        <img src={assets.search_icon} alt="search" />
 
-        <div className="navbar-search-icon">
-          <img src={assets.basket_icon} alt="" />
-          <div className="dot"></div>
+        <div className="navbar-search-icon" role="button" aria-label="cart">
+          <img src={assets.basket_icon} alt="cart" />
+          <div className="dot" />
         </div>
-        <button>Sign Up</button>
+        <button type="button">Sign Up</button>
       </div>
-    </div>
+    </nav>
   );
 };
 

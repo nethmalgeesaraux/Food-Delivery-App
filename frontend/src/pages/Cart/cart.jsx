@@ -54,12 +54,12 @@ const Cart = () => {
               <hr/>
               <div className="cart-total-details">
                 <p>Delivery Fee</p>
-                <p>{2}</p>
+                <p>${geTotalCartAmount()===0?0:2}</p>
               </div>
               <hr/>
               <div className="cart-total-details">
                 <p>Total</p>
-                <p>${geTotalCartAmount()+2}</p>
+                <p>${geTotalCartAmount()===0?0:geTotalCartAmount()+2}</p>
               </div>
               
               

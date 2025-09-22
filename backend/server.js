@@ -1,5 +1,7 @@
 import express from 'express';
 import cors from 'cors';
+import { connectDB } from './config/db.js';
+
 
 
 //app config
@@ -10,6 +12,10 @@ const port = 4000
 app.use(express.json());
 app.use(cors());
 
+//db cont
+connectDB();
+
+
 app.get("/", (req, res) => {
     res.send("API Working")
 })
@@ -18,4 +24,3 @@ app.listen(port, () => {
     console.log(`Sever Startted on http://localhost:${port}`)
 })
 
-//mongodb+srv://nethmalgeesara:200511@cluster0.k2vulpb.mongodb.net/?

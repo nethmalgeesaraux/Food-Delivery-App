@@ -86,6 +86,11 @@
     cursor: pointer;
     
 }
+
+.cross{
+    color: tomato;
+
+}
 @media (max-width: 750px) {
     .cart-bottom{
         flex-direction: column-reverse;

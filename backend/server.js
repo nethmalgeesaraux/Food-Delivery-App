@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import { connectDB } from './config/db.js';
+import foodModel from './models/foodModel.js';
+
 
 
 
@@ -14,6 +16,10 @@ app.use(cors());
 
 //db cont
 connectDB();
+
+//api routes
+app.use("/api/food",foodModel)
+
 
 
 app.get("/", (req, res) => {

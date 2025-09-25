@@ -19,6 +19,7 @@ connectDB();
 
 //api routes
 app.use("/api/food",foodModel)
+app.use("/image",express.static('uploads'))
 
 
 

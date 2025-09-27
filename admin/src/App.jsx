@@ -1,8 +1,14 @@
 import React from 'react'
+import Sidebar from './component/sidebar/Sidebar'
 
 const App = () => {
   return (
     <div>
+      <Navbar/>
+      <hr/>
+      <div className="app-content">
+        <Sidebar/>
+      </div>
       
     </div>
   )

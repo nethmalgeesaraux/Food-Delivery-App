@@ -20,10 +20,14 @@
     padding: 10px;
 }
 .add-category-price{
-    display: flex;
+    /* display: flex; */
     gap: 30px;
 }
-.add-category-price select, .add-category-price input{
+.add-category-price select {
+    max-width: 120px;
+    padding: 10px;
+}
+.add-price input{
     max-width: 120px;
     padding: 10px;
 }

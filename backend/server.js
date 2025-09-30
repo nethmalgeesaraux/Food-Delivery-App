@@ -8,7 +8,7 @@ import foodModel from './models/foodModel.js';
 
 //app config
 const app = express();
-const port = 40000
+const port = 4000
 
 //middleware
 app.use(express.json());

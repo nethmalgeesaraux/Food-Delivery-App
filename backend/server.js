@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import { connectDB } from './config/db.js';
 import foodModel from './models/foodModel.js';
+
 import userRouter from './routes/userRoute.js';
 import 'dotenv/config'
 

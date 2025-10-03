@@ -5,6 +5,8 @@ export const StoreContext = createContext({ food_list: [] });
 
 const StoreContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
+  const Url ="http://localhost:4000"
+  const[token,setToken]=useState("")
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: (prev[itemId] || 0) + 1 }));
@@ -30,7 +32,7 @@ const StoreContextProvider = ({ children }) => {
   };
 
   const contextValue = useMemo(
-    () => ({ food_list, cartItems, addToCart, removeFromCart, geTotalCartAmount}),
+    () => ({ food_list, cartItems, addToCart, removeFromCart, geTotalCartAmount,Url,token,setToken }),
     
   );
 

@@ -1,6 +1,7 @@
 import React, { createContext, useState,useMemo } from "react";
 import { food_list } from "../assets/assets";
 
+
 export const StoreContext = createContext({ food_list: [] });
 
 const StoreContextProvider = ({ children }) => {

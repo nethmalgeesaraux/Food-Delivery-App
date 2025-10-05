@@ -5,6 +5,7 @@ import foodModel from './models/foodModel.js';
 
 import userRouter from './routes/userRoute.js';
 import 'dotenv/config'
+import cartrouter from './routes/cartRoute.js';
 
 
 
@@ -23,6 +24,7 @@ connectDB();
 app.use("/api/food",foodModel)
 app.use("/image",express.static('uploads'))
 app.use("/api/user",userRouter)
+app.use("/api/cart",cartrouter)
 
 
 
